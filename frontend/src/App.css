@@ -1,0 +1,114 @@
+
+/* =========================================
+   MY TASTE - Main Application Layout
+   ========================================= */
+
+.main-layout {
+  min-height: 100vh;
+  background-color: #f8fafc;
+}
+
+/* Application Header */
+
+.app-header {
+  padding: 28px 24px;
+  text-align: center;
+  background-color: #1e293b;
+  color: #ffffff;
+}
+
+.app-header h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.app-header p {
+  margin: 0;
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+/* Module Navigation */
+
+.module-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 18px;
+  background-color: #e2e8f0;
+}
+
+.module-navigation a {
+  padding: 10px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #334155;
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.module-navigation a:hover {
+  background-color: #cbd5e1;
+}
+
+.module-navigation a.active {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+/* Main Module Content */
+
+.module-content {
+  width: calc(100% - 32px);
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 28px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.module-content h2 {
+  margin: 0 0 16px;
+  font-size: 24px;
+  color: #0f172a;
+}
+
+.module-content p {
+  margin: 10px 0;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* Responsive Layout */
+
+@media (max-width: 768px) {
+  .app-header h1 {
+    font-size: 26px;
+  }
+
+  .module-navigation {
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .module-navigation a {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  .module-content {
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .module-content h2 {
+    font-size: 20px;
+  }
+}
